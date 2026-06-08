@@ -159,3 +159,29 @@ South Jersey Transportation Planning Organization (SJTPO)
 
 Project initiated June 2026.
 Current phase: Data Inventory and System Documentation.
+
+## File Storage and Mirroring Policy
+
+This repository is the working and documentation repository for the SJTDM TAZ Migration and Data Validation Project.
+
+Certain GIS datasets, map products, metadata records, and final deliverables shall also be mirrored to their expected SJTPO GIS Data Management locations.
+
+The repository shall maintain:
+- Scripts
+- Documentation
+- Data inventories
+- QA/QC procedures
+- Processing logs
+- Non-sensitive working tables
+
+The SJTPO GIS data structure shall maintain:
+- Authoritative GIS layers
+- Final geodatabases
+- ArcGIS Pro projects
+- Published map products
+- Metadata records
+- Approved deliverables
+
+Where a file exists in both locations, the README, metadata, or inventory table shall identify the authoritative location.
+
+Large source datasets and authoritative GIS databases should not be treated as Git-controlled source code unless specifically needed for reproducibility.
