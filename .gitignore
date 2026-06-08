@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+.env/
+
+# GIS large/binary working files
+*.lock
+*.sr.lock
+*.gdb/
+*.mdb
+*.accdb
+
+# Temporary outputs
+outputs/temp/
+data/raw/
+data/intermediate/
+
+# Office temp files
+~$*
+*.tmp
