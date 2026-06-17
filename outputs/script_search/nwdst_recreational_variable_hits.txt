@@ -1,0 +1,483 @@
+NWDST recreational variable search
+Search folder: H:\Planning\SJTDM\SJTDM (old, 2016)\Application Files
+File pattern: NWDST00*.S
+
+
+================================================================================
+SCRIPT: H:\Planning\SJTDM\SJTDM (old, 2016)\Application Files\NWDST00A.S
+================================================================================
+
+INPUT FILES:
+  C:\SHARE\D-PROD\PROJECTS\0021.00\WORKING\MODEL\APPLICATION FILES\SJLOO00B.MAT
+  C:\share\D-Prod\Projects\0021.00\Backgrnd\2025\Triptabs\attr.A25
+  C:\share\D-Prod\Projects\0021.00\Backgrnd\2025\Triptabs\prod.A25
+
+OUTPUT FILES:
+  C:\share\D-PROD\PROJECTS\0021.00\WORKING\MODEL\APPLICATION FILES\SJPATABLES.MAT
+
+MO DEFINITIONS:
+
+NAME DEFINITIONS:
+
+VARIABLE HITS:
+  BAC | Line 4: FILEI ZDATI[2] = "C:\share\D-Prod\Projects\0021.00\Backgrnd\2025\Triptabs\attr.A25"
+  BAC | Line 5: FILEI ZDATI[1] = "C:\share\D-Prod\Projects\0021.00\Backgrnd\2025\Triptabs\prod.A25"
+  CA | Line 1: ; Do not change filenames or add or remove FILEI/FILEO statements using an editor. Use Cube/Application Manager.
+  CA | Line 3: FILEI MATI[1] = "C:\SHARE\D-PROD\PROJECTS\0021.00\WORKING\MODEL\APPLICATION FILES\SJLOO00B.MAT"
+  CA | Line 6: FILEO MATO[1] = "C:\share\D-PROD\PROJECTS\0021.00\WORKING\MODEL\APPLICATION FILES\SJPATABLES.MAT"
+  CA | Line 10: ; used distribution method.  User defined distribution process can also be defined.
+
+================================================================================
+SCRIPT: H:\Planning\SJTDM\SJTDM (old, 2016)\Application Files\NWDST00B.S
+================================================================================
+
+INPUT FILES:
+  {SCENARIO_DIR}\HSKIM_PK.MAT
+  {SCENARIO_DIR}\PANDA.DBF
+
+OUTPUT FILES:
+  {SCENARIO_DIR}\SCHTRIPS.MAT
+
+MO DEFINITIONS:
+  1-4, name=SCH1,SCH2,SCH3,SCH4,dec=4*4
+
+NAME DEFINITIONS:
+  SCH1,SCH2,SCH3,SCH4,dec
+  ff,
+       lookup
+
+VARIABLE HITS:
+  CA | Line 1: ; Do not change filenames or add or remove FILEI/FILEO statements using an editor. Use Cube/Application Manager.
+
+================================================================================
+SCRIPT: H:\Planning\SJTDM\SJTDM (old, 2016)\Application Files\NWDST00C.S
+================================================================================
+
+INPUT FILES:
+  {SCENARIO_DIR}\HSKIM_OP.MAT
+  {SCENARIO_DIR}\PANDA.DBF
+
+OUTPUT FILES:
+  {SCENARIO_DIR}\HBSTRIPS.MAT
+
+MO DEFINITIONS:
+  1-4, name=HBS1,HBS2,HBS3,HBS4,dec=4*4
+
+NAME DEFINITIONS:
+  HBS1,HBS2,HBS3,HBS4,dec
+  ff,
+       lookup
+
+VARIABLE HITS:
+  CA | Line 1: ; Do not change filenames or add or remove FILEI/FILEO statements using an editor. Use Cube/Application Manager.
+
+================================================================================
+SCRIPT: H:\Planning\SJTDM\SJTDM (old, 2016)\Application Files\NWDST00D.S
+================================================================================
+
+INPUT FILES:
+  {SCENARIO_DIR}\HSKIM_OP.MAT
+  {SCENARIO_DIR}\PANDA.DBF
+
+OUTPUT FILES:
+  {SCENARIO_DIR}\HBOTRIPS.MAT
+
+MO DEFINITIONS:
+  1-4, name=HBO1,HBO2,HBO3,HBO4,DEC=4*4
+
+NAME DEFINITIONS:
+  HBO1,HBO2,HBO3,HBO4,DEC
+  ff,
+       lookup
+
+VARIABLE HITS:
+  CA | Line 1: ; Do not change filenames or add or remove FILEI/FILEO statements using an editor. Use Cube/Application Manager.
+
+================================================================================
+SCRIPT: H:\Planning\SJTDM\SJTDM (old, 2016)\Application Files\NWDST00E.S
+================================================================================
+
+INPUT FILES:
+  {SCENARIO_DIR}\HSKIM_PK.MAT
+  {SCENARIO_DIR}\PANDA.DBF
+
+OUTPUT FILES:
+  {SCENARIO_DIR}\NHBWTRIPS.MAT
+
+MO DEFINITIONS:
+  1, name=NHBW,DEC=4
+
+NAME DEFINITIONS:
+  NHBW,DEC
+  ff,
+       lookup
+
+VARIABLE HITS:
+  CA | Line 1: ; Do not change filenames or add or remove FILEI/FILEO statements using an editor. Use Cube/Application Manager.
+
+================================================================================
+SCRIPT: H:\Planning\SJTDM\SJTDM (old, 2016)\Application Files\NWDST00F.S
+================================================================================
+
+INPUT FILES:
+  {SCENARIO_DIR}\SJM11OP.MAT
+  {SCENARIO_DIR}\PANDA.DBF
+  C:\sjtpo\common\SJ4KFAC.ATW
+
+OUTPUT FILES:
+  {SCENARIO_DIR}\sj412ATW.A10
+
+MO DEFINITIONS:
+  1, name=ATW
+
+NAME DEFINITIONS:
+  ATW
+par zonemsg
+  ff,
+       lookup
+
+VARIABLE HITS:
+  CA | Line 1: ; Do not change filenames or add or remove FILEI/FILEO statements using an editor. Use Cube/Application Manager.
+  CA | Line 15: ;  Scale K factors
+
+================================================================================
+SCRIPT: H:\Planning\SJTDM\SJTDM (old, 2016)\Application Files\NWDST00G.S
+================================================================================
+
+INPUT FILES:
+  {SCENARIO_DIR}\HSKIM_OP.MAT
+  {SCENARIO_DIR}\PANDA.DBF
+
+OUTPUT FILES:
+  {SCENARIO_DIR}\NWKTRIPS.MAT
+
+MO DEFINITIONS:
+  1, name=NWK,DEC=4
+
+NAME DEFINITIONS:
+  NWK,DEC
+  ff,
+       lookup
+
+VARIABLE HITS:
+  CA | Line 1: ; Do not change filenames or add or remove FILEI/FILEO statements using an editor. Use Cube/Application Manager.
+
+================================================================================
+SCRIPT: H:\Planning\SJTDM\SJTDM (old, 2016)\Application Files\NWDST00H.S
+================================================================================
+
+INPUT FILES:
+  {SCENARIO_DIR}\HSKIM_OP.MAT
+  {SCENARIO_DIR}\PANDA.DBF
+
+OUTPUT FILES:
+  {SCENARIO_DIR}\COMTRKTRIPS.MAT
+
+MO DEFINITIONS:
+  1-6, name=COMII, COMIX, COMXI, TRKII, TRKIX, TRKXI,DEC=6*4
+
+NAME DEFINITIONS:
+  COMII, COMIX, COMXI, TRKII, TRKIX, TRKXI,DEC
+  ff,
+       lookup
+
+VARIABLE HITS:
+  CA | Line 1: ; Do not change filenames or add or remove FILEI/FILEO statements using an editor. Use Cube/Application Manager.
+
+================================================================================
+SCRIPT: H:\Planning\SJTDM\SJTDM (old, 2016)\Application Files\NWDST00I.S
+================================================================================
+
+INPUT FILES:
+  {SCENARIO_DIR}\HSKIM_PK.MAT
+  {SCENARIO_DIR}\PANDA.DBF
+
+OUTPUT FILES:
+  {SCENARIO_DIR}\PKXIIXTRIPS.MAT
+
+MO DEFINITIONS:
+  1-6, name=HBWIX, HBWXI, SCHIX, SCHXI, NHBWIX, NHBWXI,dec=6*4
+
+NAME DEFINITIONS:
+  HBWIX, HBWXI, SCHIX, SCHXI, NHBWIX, NHBWXI,dec
+  ff,
+       lookup
+
+VARIABLE HITS:
+  CA | Line 1: ; Do not change filenames or add or remove FILEI/FILEO statements using an editor. Use Cube/Application Manager.
+  EA | Line 2: RUN PGM=DISTRIBUTION PRNFILE="{SCENARIO_DIR}\NWDST00I.PRN" MSG='Generate Peak External Trip Ends'
+
+================================================================================
+SCRIPT: H:\Planning\SJTDM\SJTDM (old, 2016)\Application Files\NWDST00J.S
+================================================================================
+
+INPUT FILES:
+  {SCENARIO_DIR}\HSKIM_OP.MAT
+  {SCENARIO_DIR}\PANDA.DBF
+
+OUTPUT FILES:
+  {SCENARIO_DIR}\OPXIIXTRIPS1.MAT
+
+MO DEFINITIONS:
+  1-4, name=HBSIX, HBSXI, HBOIX, HBOXI,dec=4*4
+
+NAME DEFINITIONS:
+  HBSIX, HBSXI, HBOIX, HBOXI,dec
+  ff,
+         lookup
+
+VARIABLE HITS:
+  CA | Line 1: ; Do not change filenames or add or remove FILEI/FILEO statements using an editor. Use Cube/Application Manager.
+  EA | Line 2: RUN PGM=DISTRIBUTION PRNFILE="{SCENARIO_DIR}\NWDST00J.PRN" MSG='Generate Off-peak External Group 1 Trip Ends'
+
+================================================================================
+SCRIPT: H:\Planning\SJTDM\SJTDM (old, 2016)\Application Files\NWDST00K.S
+================================================================================
+
+INPUT FILES:
+  {SCENARIO_DIR}\HSKIM_OP.MAT
+  {SCENARIO_DIR}\PANDA.DBF
+
+OUTPUT FILES:
+  {SCENARIO_DIR}\OPXIIXTRIPS2.MAT
+
+MO DEFINITIONS:
+  1-4, name=NWKIX, NWKXI, COLLIX, COLLXI,DEC=4*4
+
+NAME DEFINITIONS:
+  NWKIX, NWKXI, COLLIX, COLLXI,DEC
+  ff,
+         lookup
+
+VARIABLE HITS:
+  CA | Line 1: ; Do not change filenames or add or remove FILEI/FILEO statements using an editor. Use Cube/Application Manager.
+  EA | Line 2: RUN PGM=DISTRIBUTION PRNFILE="{SCENARIO_DIR}\NWDST00K.PRN" MSG='Generate Off-peak External Group 2 Trip Ends'
+
+================================================================================
+SCRIPT: H:\Planning\SJTDM\SJTDM (old, 2016)\Application Files\NWDST00L.S
+================================================================================
+
+INPUT FILES:
+  S:\D-Prod\Projects\0021.00\Backgrnd\2010\Triptabs\SJM12SHV.A10
+  S:\D-Prod\Projects\0021.00\Backgrnd\2010\Nets\SJM41SM.A10
+
+OUTPUT FILES:
+  C:\SJMSHV.A10
+
+MO DEFINITIONS:
+  1-6
+
+NAME DEFINITIONS:
+  ff,
+  LOOKUP
+
+VARIABLE HITS:
+  BAC | Line 4: FILEI MATI[2] = "S:\D-Prod\Projects\0021.00\Backgrnd\2010\Triptabs\SJM12SHV.A10"
+  BAC | Line 5: FILEI MATI[1] = "S:\D-Prod\Projects\0021.00\Backgrnd\2010\Nets\SJM41SM.A10"
+  BAC | Line 19: lookup FILE = "S:\D-PROD\PROJECTS\0021.00\BACKGRND\SJMODEL.116\COMMON.116\SJMFFSHV.DAT",
+  SHV | Line 2: RUN PGM=DISTRIBUTION PRNFILE="{SCENARIO_DIR}\NWDST00L.PRN" MSG='SHV'
+  SHV | Line 3: FILEO MATO[1] = "C:\SJMSHV.A10",MO=1-6
+  SHV | Line 4: FILEI MATI[2] = "S:\D-Prod\Projects\0021.00\Backgrnd\2010\Triptabs\SJM12SHV.A10"
+  SHV | Line 8: 1: *PGM TRPDST FF=SJMFFSHV.DAT,PA=SJMSHV.A10,IM=101-SJM41SM.A10
+  SHV | Line 9: 2: *UNIT 12=C:\SJ09\2010\TRIPTABS\SJM12SHV.A10
+  SHV | Line 10: 3: *ID SJM: 2010 SHV TRIP DISTRIBUTION
+  SHV | Line 19: lookup FILE = "S:\D-PROD\PROJECTS\0021.00\BACKGRND\SJMODEL.116\COMMON.116\SJMFFSHV.DAT",
+  CA | Line 1: ; Do not change filenames or add or remove FILEI/FILEO statements using an editor. Use Cube/Application Manager.
+
+================================================================================
+SCRIPT: H:\Planning\SJTDM\SJTDM (old, 2016)\Application Files\NWDST00M.S
+================================================================================
+
+INPUT FILES:
+  {SCENARIO_DIR}\SJRECTGSHORE.DBF
+  {SCENARIO_DIR}\HSKIM_OP.MAT
+
+OUTPUT FILES:
+  {SCENARIO_DIR}\SHVTRIPS.MAT
+
+MO DEFINITIONS:
+  1,DEC=4,NAME=SHV
+
+NAME DEFINITIONS:
+  SHV
+
+par zonemsg
+  ff,
+  LOOKUP
+
+VARIABLE HITS:
+  SJRECTG | Line 3: FILEI ZDATI[1] = "{SCENARIO_DIR}\SJRECTGSHORE.DBF"
+  SJRECTGSHORE | Line 3: FILEI ZDATI[1] = "{SCENARIO_DIR}\SJRECTGSHORE.DBF"
+  SHOREPROD | Line 17: SETPA P[1]=ZI.1.SHOREPROD  A[1]=ZI.1.SHOREATTR
+  SHOREATTR | Line 17: SETPA P[1]=ZI.1.SHOREPROD  A[1]=ZI.1.SHOREATTR
+  SHV | Line 2: RUN PGM=DISTRIBUTION PRNFILE="{SCENARIO_DIR}\NWDST00M.PRN" MSG='Generate Recreational SHV Trip Ends'
+  SHV | Line 5: FILEO MATO[1] = "{SCENARIO_DIR}\SHVTRIPS.MAT",
+  SHV | Line 6: MO=1,DEC=4,NAME=SHV
+  CA | Line 1: ; Do not change filenames or add or remove FILEI/FILEO statements using an editor. Use Cube/Application Manager.
+  EA | Line 2: RUN PGM=DISTRIBUTION PRNFILE="{SCENARIO_DIR}\NWDST00M.PRN" MSG='Generate Recreational SHV Trip Ends'
+  EA | Line 17: SETPA P[1]=ZI.1.SHOREPROD  A[1]=ZI.1.SHOREATTR
+
+================================================================================
+SCRIPT: H:\Planning\SJTDM\SJTDM (old, 2016)\Application Files\NWDST00N.S
+================================================================================
+
+INPUT FILES:
+  {SCENARIO_DIR}\SJRECTGEVT.DBF
+  {SCENARIO_DIR}\HSKIM_OP.MAT
+
+OUTPUT FILES:
+  {SCENARIO_DIR}\CEVTRIPS.MAT
+
+MO DEFINITIONS:
+  1-2, DEC=2*4,NAME=CVT,EVT
+
+NAME DEFINITIONS:
+  CVT,EVT
+
+par zonemsg
+  ff,
+  LOOKUP
+
+VARIABLE HITS:
+  SJRECTG | Line 3: FILEI ZDATI[1] = "{SCENARIO_DIR}\SJRECTGEVT.DBF"
+  SJRECTGEVT | Line 3: FILEI ZDATI[1] = "{SCENARIO_DIR}\SJRECTGEVT.DBF"
+  CVTPROD | Line 18: SETPA P[1]=ZI.1.CVTPROD  A[1]=ZI.1.CVTATTR
+  CVTATTR | Line 18: SETPA P[1]=ZI.1.CVTPROD  A[1]=ZI.1.CVTATTR
+  EVTPROD | Line 19: SETPA P[2]=ZI.1.EVTPROD  A[2]=ZI.1.EVTATTR
+  EVTATTR | Line 19: SETPA P[2]=ZI.1.EVTPROD  A[2]=ZI.1.EVTATTR
+  CA | Line 1: ; Do not change filenames or add or remove FILEI/FILEO statements using an editor. Use Cube/Application Manager.
+  EA | Line 2: RUN PGM=DISTRIBUTION PRNFILE="{SCENARIO_DIR}\NWDST00O.PRN" MSG='Generate Recreational CEV Trip Ends'
+  CVT | Line 6: MO=1-2, DEC=2*4,NAME=CVT,EVT
+  CVT | Line 18: SETPA P[1]=ZI.1.CVTPROD  A[1]=ZI.1.CVTATTR
+  EVT | Line 3: FILEI ZDATI[1] = "{SCENARIO_DIR}\SJRECTGEVT.DBF"
+  EVT | Line 5: FILEO MATO[1] = "{SCENARIO_DIR}\CEVTRIPS.MAT",
+  EVT | Line 6: MO=1-2, DEC=2*4,NAME=CVT,EVT
+  EVT | Line 19: SETPA P[2]=ZI.1.EVTPROD  A[2]=ZI.1.EVTATTR
+
+================================================================================
+SCRIPT: H:\Planning\SJTDM\SJTDM (old, 2016)\Application Files\NWDST00O.S
+================================================================================
+
+INPUT FILES:
+  {SCENARIO_DIR}\SJRECTGCAS.DBF
+  {SCENARIO_DIR}\HSKIM_OP.MAT
+
+OUTPUT FILES:
+  {SCENARIO_DIR}\CEATRIPS.MAT
+
+MO DEFINITIONS:
+  1-3, DEC=3*4,NAME=CA,EA,CBS
+
+NAME DEFINITIONS:
+  CA,EA,CBS
+
+
+par zonemsg
+  ff,
+  LOOKUP
+
+VARIABLE HITS:
+  SJRECTG | Line 3: FILEI ZDATI[1] = "{SCENARIO_DIR}\SJRECTGCAS.DBF"
+  SJRECTGCAS | Line 3: FILEI ZDATI[1] = "{SCENARIO_DIR}\SJRECTGCAS.DBF"
+  CACPROD | Line 20: SETPA P[1]=ZI.1.CACPROD  A[1]=ZI.1.CACATTR
+  CACATTR | Line 20: SETPA P[1]=ZI.1.CACPROD  A[1]=ZI.1.CACATTR
+  EACPROD | Line 21: SETPA P[2]=ZI.1.EACPROD  A[2]=ZI.1.EACATTR
+  EACATTR | Line 21: SETPA P[2]=ZI.1.EACPROD  A[2]=ZI.1.EACATTR
+  CBSPROD | Line 22: SETPA P[3]=ZI.1.CBSPROD  A[3]=ZI.1.CBSATTR
+  CBSATTR | Line 22: SETPA P[3]=ZI.1.CBSPROD  A[3]=ZI.1.CBSATTR
+  CA | Line 1: ; Do not change filenames or add or remove FILEI/FILEO statements using an editor. Use Cube/Application Manager.
+  CA | Line 3: FILEI ZDATI[1] = "{SCENARIO_DIR}\SJRECTGCAS.DBF"
+  CA | Line 6: MO=1-3, DEC=3*4,NAME=CA,EA,CBS
+  CA | Line 20: SETPA P[1]=ZI.1.CACPROD  A[1]=ZI.1.CACATTR
+  CA | Line 21: SETPA P[2]=ZI.1.EACPROD  A[2]=ZI.1.EACATTR
+  EA | Line 2: RUN PGM=DISTRIBUTION PRNFILE="{SCENARIO_DIR}\NWDST00P.PRN" MSG='Generate Recreational CEA Trip Ends'
+  EA | Line 5: FILEO MATO[1] = "{SCENARIO_DIR}\CEATRIPS.MAT",
+  EA | Line 6: MO=1-3, DEC=3*4,NAME=CA,EA,CBS
+  EA | Line 21: SETPA P[2]=ZI.1.EACPROD  A[2]=ZI.1.EACATTR
+  CBS | Line 6: MO=1-3, DEC=3*4,NAME=CA,EA,CBS
+  CBS | Line 22: SETPA P[3]=ZI.1.CBSPROD  A[3]=ZI.1.CBSATTR
+
+================================================================================
+SCRIPT: H:\Planning\SJTDM\SJTDM (old, 2016)\Application Files\NWDST00P.S
+================================================================================
+
+INPUT FILES:
+  {SCENARIO_DIR}\HSKIM_PK.MAT
+  {SCENARIO_DIR}\PANDA.DBF
+
+OUTPUT FILES:
+  {SCENARIO_DIR}\HBWTRIPS.MAT
+
+MO DEFINITIONS:
+  1-4, name=HBW1,HBW2,HBW3,HBW4,dec=4*4
+
+NAME DEFINITIONS:
+  HBW1,HBW2,HBW3,HBW4,dec
+  ff,
+       lookup
+
+VARIABLE HITS:
+  CA | Line 1: ; Do not change filenames or add or remove FILEI/FILEO statements using an editor. Use Cube/Application Manager.
+
+================================================================================
+SCRIPT: H:\Planning\SJTDM\SJTDM (old, 2016)\Application Files\NWDST00Q.S
+================================================================================
+
+INPUT FILES:
+  {SCENARIO_DIR}\SJRECTGACCESS.DBF
+  {SCENARIO_DIR}\HSKIM_OP.MAT
+
+OUTPUT FILES:
+  {SCENARIO_DIR}\SHATRIPS.MAT
+
+MO DEFINITIONS:
+  1-3, DEC=4*4,name=BAC,DAC,SWK
+
+NAME DEFINITIONS:
+  BAC,DAC,SWK
+
+par zonemsg
+  ff,
+  LOOKUP
+
+VARIABLE HITS:
+  SJRECTG | Line 3: FILEI ZDATI[1] = "{SCENARIO_DIR}\SJRECTGACCESS.DBF"
+  SJRECTGACCESS | Line 3: FILEI ZDATI[1] = "{SCENARIO_DIR}\SJRECTGACCESS.DBF"
+  OVRBACPROD | Line 19: SETPA P[1]=ZI.1.OVRBACPROD  A[1]=ZI.1.OVRBACATTR
+  OVRBACATTR | Line 19: SETPA P[1]=ZI.1.OVRBACPROD  A[1]=ZI.1.OVRBACATTR
+  DAYBACPROD | Line 20: SETPA P[2]=ZI.1.DAYBACPROD  A[2]=ZI.1.DAYBACATTR
+  DAYBACATTR | Line 20: SETPA P[2]=ZI.1.DAYBACPROD  A[2]=ZI.1.DAYBACATTR
+  SWKPROD | Line 21: SETPA P[3]=ZI.1.SWKPROD     A[3]=ZI.1.SWKATTR
+  SWKATTR | Line 21: SETPA P[3]=ZI.1.SWKPROD     A[3]=ZI.1.SWKATTR
+  BAC | Line 6: mo=1-3, DEC=4*4,name=BAC,DAC,SWK
+  BAC | Line 19: SETPA P[1]=ZI.1.OVRBACPROD  A[1]=ZI.1.OVRBACATTR
+  BAC | Line 20: SETPA P[2]=ZI.1.DAYBACPROD  A[2]=ZI.1.DAYBACATTR
+  DAC | Line 6: mo=1-3, DEC=4*4,name=BAC,DAC,SWK
+  SWK | Line 6: mo=1-3, DEC=4*4,name=BAC,DAC,SWK
+  SWK | Line 21: SETPA P[3]=ZI.1.SWKPROD     A[3]=ZI.1.SWKATTR
+  CA | Line 1: ; Do not change filenames or add or remove FILEI/FILEO statements using an editor. Use Cube/Application Manager.
+  CA | Line 19: SETPA P[1]=ZI.1.OVRBACPROD  A[1]=ZI.1.OVRBACATTR
+  CA | Line 20: SETPA P[2]=ZI.1.DAYBACPROD  A[2]=ZI.1.DAYBACATTR
+  EA | Line 2: RUN PGM=DISTRIBUTION PRNFILE="{SCENARIO_DIR}\NWDST00N.PRN" MSG='Generate Recreational SHA Trip Ends'
+
+================================================================================
+SCRIPT: H:\Planning\SJTDM\SJTDM (old, 2016)\Application Files\NWDST00R.S
+================================================================================
+
+INPUT FILES:
+  {SCENARIO_DIR}\HSKIM_OP.MAT
+  {SCENARIO_DIR}\PANDA.DBF
+
+OUTPUT FILES:
+  {SCENARIO_DIR}\HBCOLLTRIPS.MAT
+
+MO DEFINITIONS:
+  1, name=COLL,DEC=4
+
+NAME DEFINITIONS:
+  COLL,DEC
+  ff,
+       lookup
+
+VARIABLE HITS:
+  CA | Line 1: ; Do not change filenames or add or remove FILEI/FILEO statements using an editor. Use Cube/Application Manager.
